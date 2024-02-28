@@ -1,0 +1,523 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ html{
+    scroll-behavior: smooth;
+ }
+
+
+/* nav section */
+
+nav .navbar-brand{
+    font-weight: 800;
+}
+
+nav .nav-link{
+    color: white;
+    font-size: .9rem;
+    font-weight: 400;
+
+}
+nav .nav-item{
+    padding-left: 2rem;
+}
+nav .nav-link:focus,nav .nav-link:hover{
+    color: white;
+
+}
+nav .navbar-nav .nav-link.active::after{
+    content: "";
+    width:70%;
+    height: .15rem;
+    background-color: white;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    
+}
+
+
+ /* nav .navbar-nav .nav-link.active,::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}  */
+
+@media screen and (max-width:768px) {
+    nav .navbar-nav{
+        align-items: center;
+        
+    }
+    
+}
+
+
+
+/* nav section */
+
+
+/* home section */
+#home{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.home-content h5{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.home-content span{
+    
+    font-weight: 200;
+}
+.home-content p{
+    font-size: 4rem;
+    font-weight: 400;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0, .7);
+}
+.home-content p::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes typing{
+    0%{content: "|";}
+    1.5%{content: "L|";}
+    3%{content: "La|";}
+    4.5%{content: "Lar|";}
+    6%{content: "Larr|";}
+    7.5%{content: "Larry|";}
+    9%{content: "Larry |";}
+    10.5%{content: "Larry D|";}
+    12%{content: "Larry Da|";}
+    13.5%{content: "Larry Dan|";}
+    15%{content: "Larry Dani|";}
+    16.5%{content: "Larry Danie|";}
+    18%{content: "Larry Daniel|";}
+    19.5%{content: "Larry Daniels|";}
+    21%{content: "Larry Daniels |";}
+    22.5%{content: "Larry Daniels|";}
+    24%{content: "Larry Daniel|";}
+    25.5%{content: "Larry Danie|";}
+    27%{content: "Larry Dani|";}
+    28.5%{content: "Larry Dan|";}
+    30%{content: "Larry Da|";}
+    31.5%{content: "Larry D|";}
+    33%{content: "Larry |";}
+    34.5%{content: "Larry|";}
+    36%{content: "Larr|";}
+    37.5%{content: "Lar|";}
+    39%{content: "La|";}
+    40.5%{content: "L|";}
+    42%{content: "|";}
+    43.5%{content: "D|";}
+    45%{content: "De|";}
+    46.5%{content: "Dev|";}
+    48%{content: "Deve|";}
+    49.5%{content: "Devel|";}
+    51%{content: "Develo|";}
+    52.5%{content: "Develop|";}
+    54%{content: "Develope|";}
+    55.5%{content: "Developer|";}
+    57%{content: "Developer |";}
+    58.5%{content: "Develope|";}
+    60%{content: "Develop|";}
+    61.5%{content: "Develo|";}
+    63%{content: "Devel|";}
+    64.5%{content: "Deve|";}
+    66%{content: "Dev|";}
+    67.5%{content: "De|";}
+    69%{content: "D|";}
+    70.5%{content: "|";}
+    72%{content: "D|";}
+    73.5%{content: "De|";}
+    75%{content: "Des|";}
+    76.5%{content: "Desi|";}
+    78%{content: "Desig|";}
+    79.5%{content: "Design|";}
+    81%{content: "Designe|";}
+    82.5%{content: "Designer |";}
+    84%{content: "Designer|";}
+    85.5%{content: "Designe|";}
+    87%{content: "Design|";}
+    88.5%{content: "Desig|";}
+    90%{content: "Desi|";}
+    91.5%{content: "Des|";}
+    93%{content: "De|";}
+    94.5%{content: "D|";}
+    100%{content: "|";}
+   
+
+
+
+
+}
+
+#home .icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+/* home section */
+
+
+
+/* about section */
+#about h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
+#about span{
+    color: #748182;
+    letter-spacing: .1rem;
+    
+    font-weight: 400;
+}
+#about p{
+    color: #748182;
+}
+
+#about figure::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translate(-2rem,2rem);
+
+}
+
+#about figure{
+    width: 90%;
+}
+#about .prog-first{
+    width: 95%;
+
+}
+#about .progress,#about .progress-stacked{
+    
+    height: 1.5rem;
+    box-shadow: 0 5px 5px #E3E3E3 inset;
+}
+
+#about .btn-1{
+    background-color: black;
+    color: white;
+    transition: all .2s;
+}
+
+#about .btn-1:hover{
+    background-color: white;
+    color:black ;
+}
+#about .btn-outline-dark:hover{
+    background-color: black;
+}
+
+
+
+/* about section */
+
+
+/* services section */
+#services{
+    background-color: #F7F7F7;
+}
+
+.header h3::after{
+    content: "";
+    width:15%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat-x;
+    left: 50%;
+    bottom: -100%;
+    transform: translateX(-50%);
+
+}
+.header{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#about .row h6{
+    font-weight: 800;
+}
+#about .row p{
+    color: #81959E;
+}
+
+
+
+#services .icon{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #f4f4f4;
+    transition: all .5s;
+}  
+
+#services .inner:hover{
+    .icon{
+        background-color: black;
+        color: white;
+    }
+
+}
+
+#services h6{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+/* services section */
+
+
+
+
+/* portofilio section */
+
+#portofilio .nav-link {
+    color: black;
+    font-weight: 700;
+    position: relative;
+    
+}
+#portofilio .nav-tabs .nav-item.show .nav-link,#portofilio .nav-tabs .nav-link.active{
+    border: none;
+}
+    
+
+#portofilio .nav-tabs{
+    border: none;
+}
+#portofilio .nav-tabs .nav-link{
+    border: none;
+}
+
+#portofilio .nav-tabs .nav-link.active::after{
+    content: "";
+    width:70%;
+    height: .15rem;
+    background-color: black;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    
+}
+
+.img-caption{
+    width: 96%;
+    height: 96%;
+    top: 54%;
+    opacity: 0;
+    transition: all .5s;
+    background-color: rgba(254, 254, 254, .9);
+    
+    
+}
+#portofilio .ser-icon{
+    transition: all .5s;
+}
+
+#portofilio p{
+    transition: all .5s;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+
+.por-inner:hover .img-caption{
+    opacity: 1;
+    top: 50%;
+
+}
+.por-inner:hover .ser-icon{
+    transform: translateY(-1rem);
+
+}
+.por-inner:hover p{
+    transform: translateY(2rem);
+
+}
+
+
+#portofilio .icon{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    
+
+}
+#portofilio .icon:hover{
+    color: black;
+    background-color: white !important;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* portofilio section */
+
+
+
+/* slider section */
+#slider{
+    background-color: #F7F7F7;
+}
+#slider .carousel-item p{
+    color: #81959E;
+}
+
+#slider .carousel-item img{
+    width: 10%;
+}
+#slider .carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #869791;
+}
+
+/* slider section */
+#achieve h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#achieve p{
+    color: #748182;
+}
+
+
+/* slider section */
+
+
+
+/* team section */
+#team{
+    background-color: #f4f4f4;;
+}
+
+.team-hover{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+#team .icon{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    background-color: black;
+    
+
+}
+
+
+.team-inner:hover .team-icons{
+    transform: rotateY(180deg);
+    width: 96%;
+    height: 96%;
+    opacity: .9;
+    
+   
+}
+.single-icons{
+    transform: rotateY(180deg);
+    
+   
+}
+
+
+
+.team-icons{
+    width: 50%;
+    height: 40%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.team-img:hover img{
+    transform: scale(120%);
+}
+
+.team-inner img{
+    transition: all 1s;
+}
+
+#team a:hover .icon{
+    color: black;
+    background-color: white;
+
+}
+.team-caption h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.team-caption h6{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+/* team section */
+
+
+
+
+
+/* contact section */
+#contact .col-md-4 h6{
+    font-weight: 700;
+}
+#contact .col-md-4 p{
+    color: #748182;
+}
+#contact .icon{
+    width: 4rem;
+    height: 4rem;
+    background-color: #F7F7F7;
+    transition: all .5s;
+    
+
+}
+
+
+#contact .col-md-4:hover .icon{
+    color: white;
+    background-color: black;
+
+}
+
+#contact .form-control{
+    background-color: #F7F7F7;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+#contact .btn-outline-dark{
+    background-color: black;
+    color: white;
+}
+
+#contact .btn-outline-dark:hover{
+    background-color: white;
+    color: black;
+}
